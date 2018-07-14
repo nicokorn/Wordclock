@@ -28,11 +28,6 @@
 
 // ----------------------------------------------------------------------------
 #include "ws2812.h"
-#include "microphone.h"
-#include "stm32f1xx.h"
-#include <Math.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 /* defines */
 /* this define sets the number of TIM2 overflows
@@ -115,6 +110,7 @@ void init_timer(void){
 
 	/* Timing Mode configuration: Channel 1 */
 	TIM_OC1Struct.OCMode = TIM_OCMODE_TIMING;
+	TIM_OC1Struct.OCPolarity = TIM_OCPOLARITY_HIGH;
 	TIM_OC1Struct.Pulse = 8;
 	/* Configure the channel */
 	HAL_TIM_OC_ConfigChannel(&TIM_HandleStruct, &TIM_OC1Struct, TIM_CHANNEL_1);

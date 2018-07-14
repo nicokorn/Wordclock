@@ -29,8 +29,6 @@
 // ----------------------------------------------------------------------------
 
 #include "microphone.h"
-#include "ws2812.h"
-#include "stm32f1xx.h"
 
 /* typedefs */
 static	RCC_PeriphCLKInitTypeDef  	PeriphClkInit;

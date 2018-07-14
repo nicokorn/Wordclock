@@ -43,12 +43,12 @@
 #define FEEDBACK_FRAMES 		13
 #define MODE_STANDBY_COUNT 		10000 //ms
 /* variables */
-extern uint8_t 		WS2812_TC;
-static uint8_t 		mode;
-static uint8_t 		fx_mode;
-static uint8_t 		red,green,blue;
-static uint16_t 	buttons;
-static uint32_t 	system_counter;
+extern uint8_t 				WS2812_TC;
+static Wordclock_Mode 		mode;
+static uint8_t 				fx_mode;
+static uint8_t 				red,green,blue;
+static uint16_t 			buttons;
+static uint32_t 			system_counter;
 /* function prototypes */
 void SystemClock_Config(void);
 void refresh_clock(void);

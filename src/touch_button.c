@@ -29,8 +29,6 @@
 // ----------------------------------------------------------------------------
 
 #include "touch_button.h"
-#include "ws2812.h"
-#include "stm32f1xx.h"
 
 /**
   * @brief  initialization of touch buttons

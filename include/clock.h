@@ -1,3 +1,7 @@
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __CLOCK_H
+#define __CLOCK_H
+
 /* Includes */
 #include "stm32f1xx.h"
 
@@ -37,5 +41,5 @@ void RTC_CalendarConfig(void);
 void RTC_CalendarShow(uint8_t *showtime, uint8_t *showdate);
 void show_mode_feedback(uint16_t index, uint8_t mode, uint8_t red, uint8_t green, uint8_t blue);
 
-
+#endif /* __CLOCK_H */
 

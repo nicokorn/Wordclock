@@ -142,7 +142,7 @@ void init_clock(){
 	/* term: "FÜNF" */
 	term_fuenf2.x = 7;
 	term_fuenf2.y = 6;
-	term_fuenf2.width = 11;
+	term_fuenf2.width = 4;
 	/* term: "ELF" */
 	term_elf.x = 0;
 	term_elf.y = 7;
